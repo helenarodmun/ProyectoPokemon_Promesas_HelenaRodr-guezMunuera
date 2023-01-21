@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POKEAPI</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1 class="titulo">Pokedex</h1>
+    <div id="escoge"></div> <br>
+    <div id="seleccion">
+      <button id="btn0"></button><br>
+      <button id="btn1"></button><br>
+      <button id="btn2"></button><br>
+    </div>
+    <button type="button" class=" m-5 p-2 btn btn-primary btn-lg align" style="display:block" id="inicio">Empieza la
+      partida</button>
+      <button type="button" class=" m-5 p-2 btn btn-success btn-lg align" style="display:none" id="combate1">Primera
+        Batalla</button>
+    <button type="button" class=" m-5 p-2 btn btn-success btn-lg align" style="display:none" id="combate2">Segunda
+      Batalla</button>
+    <button type="button" class=" m-5 p-2 btn btn-success btn-lg align" style="display:none" id="combate3">Última
+      Batalla</button>
+      <button type="button" class=" m-5 p-2 btn btn-secondary btn-lg align" style="float: right; display: none" id="reinicia">Empezar de nuevo</button>
+  </header>
+  <h1 class="titulo">Poke Batalla</h1>
+  <p id="tiempo"></p>
+  <div class="listapokemon ">
+    <div class="pokemon">
+      <h1>Tu Pokemon</h1>
+      <div id="pokemon1" style="display:none">
+        <img id="sprite" />
+        <h2 id="pokemon"></h2>
+        <p id="tipo"></p>
+        <div>
+          <p id="vida"></p>
+          <p id="ataque"></p>
+          <p id="defensa"></p>
+          <p id="victorias"></p>
+          <p id="derrotas"></p>
+        </div>
+        <h5>Habilidades:</h5>
+        <select name="" id="select"></select>
+      </div>
+    </div>
+    <div class="vs">Vs</div>
+    <div class="pokemon">
+      <h1>Enemigo</h1>
+      <div id="pokemon2" style="display:none">
+        <img id="sprite2" />
+        <h2 id="enemigo"></h2>
+        <p id="tipo2"></p>
+        <h5>Habilidades:</h5>
+        <select name="" id="select2"></select>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
